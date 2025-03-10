@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>即将开放</title>
+    <script type="text/javascript">
+        window.onload = onresize = function () {
+            if (!(/Android|webOS| iPhone | iPad | iPod |BlackBerry|opera mini|opera mobile|appleWebkit.*mobile|mobile/i.test(navigator.userAgent))) {
+                window.location.href = "./";
+            }
+        };
+    </script>
+    <style scoped>
+        body {
+            margin: 0px;
+            background-color: #1a1c24;
+        }
+
+        .mobile {
+            overflow: hidden;
+            overflow-y: scroll;
+            width: 100%;
+            height: 100%;
+            background-color: #1a1c24;
+        }
+
+        .img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mobile">
+        <img class="img" src="./mobile.png" alt="">
+    </div>
+</body>
